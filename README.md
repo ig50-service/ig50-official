@@ -11,7 +11,7 @@
 ![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-blue)
 ![Datasets](https://img.shields.io/badge/Datasets-217-green)
 ![Update](https://img.shields.io/badge/Realtime-3s%20落盘-orange)
-![Market](https://img.shields.io/badge/Market-A股%20%7C%20港股%20%7C%20基金-red)
+![Market](https://img.shields.io/badge/Market-A股%20%7C%20基金%20%7C%20港股%20%7C%20美股-red)
 
 [官网首页](https://ig50.com/home.html) · [官网接口文档](https://ig50.com/index.html) · [数据文档](docs/api/README.md) · [安装指引](docs/install.md) · [关于IG50](docs/about.md)
 
