@@ -2,7 +2,7 @@
 
 > IG50 共提供 **331 个数据集**，覆盖沪深京A股、沪深数据中心、基金、港股、美股五大板块。所有数据以 JSON 文本文件落盘到本地，直接读取即可使用。
 
-> ⚠ **最新接口更新以 [官网接口文档](https://ig50.com/index.html) 为准**。本仓库为镜像文档，可能滞后于官网，如需查阅最新接口、字段、路径，请访问 [官网接口文档](https://ig50.com/index.html) 或 [官网数据检索](https://ig50.com/search.html)。
+> ⚠ **最新接口更新以 [官网接口文档](https://ig50.com/dataset-overview.html) 为准**。本仓库为镜像文档，可能滞后于官网，如需查阅最新接口、字段、路径，请访问 [官网接口文档](https://ig50.com/dataset-overview.html) 或 [官网数据检索](https://ig50.com/search.html)。
 
 ## 数据存放说明
 
@@ -396,5 +396,5 @@
 - [安装指引](../install.md)
 - [示例代码](../examples.md)
 - [关于 IG50](../about.md)
-- [官网接口文档（最新）](https://ig50.com/index.html) ← **最新接口以此为准**
+- [官网接口文档（最新）](https://ig50.com/dataset-overview.html) ← **最新接口以此为准**
 - [官网数据检索](https://ig50.com/search.html)

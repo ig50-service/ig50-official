@@ -203,4 +203,4 @@ print(f"回测 {len(results)} 只股票，耗时 {elapsed:.2f} 秒")
 
 更多接口详见 [接口文档](api/README.md)。
 
-> 最新接口更新以 [官网接口文档](https://ig50.com/index.html) 为准，本仓库示例可能滞后于官网。
+> 最新接口更新以 [官网接口文档](https://ig50.com/dataset-overview.html) 为准，本仓库示例可能滞后于官网。

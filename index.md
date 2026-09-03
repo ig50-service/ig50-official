@@ -15,7 +15,7 @@ title: IG50 · 专业的本地化股票数据引擎
 
 <p>
 <a href="https://ig50.com/home.html" style="color:#01AAED;">官网首页</a> ｜
-<a href="https://ig50.com/index.html" style="color:#01AAED;">官网接口文档</a> ｜
+<a href="https://ig50.com/dataset-overview.html" style="color:#01AAED;">官网接口文档</a> ｜
 <a href="docs/install.html" style="color:#01AAED;">安装指引</a> ｜
 <a href="docs/examples.html" style="color:#01AAED;">示例代码</a> ｜
 <a href="docs/pricing.html" style="color:#01AAED;">授权说明</a>
@@ -23,7 +23,7 @@ title: IG50 · 专业的本地化股票数据引擎
 
 </div>
 
-> ⚠ **最新接口更新以 [官网接口文档](https://ig50.com/index.html) 为准**。本页面为 GitHub Pages 镜像，可能滞后于官网。
+> ⚠ **最新接口更新以 [官网接口文档](https://ig50.com/dataset-overview.html) 为准**。本页面为 GitHub Pages 镜像，可能滞后于官网。
 
 ## 数据直达本地，随取随用
 
@@ -97,12 +97,12 @@ wget -qO ig50_shell.tar https://gitee.com/igtrade/ighub/releases/download/last/i
 - [授权说明](docs/pricing.html) — 授权方案与获取方式
 - [免责声明](docs/disclaimer.html) — 使用条款
 
-> 完整接口文档请访问 [官网接口文档](https://ig50.com/index.html)。
+> 完整接口文档请访问 [官网接口文档](https://ig50.com/dataset-overview.html)。
 
 ## 联系
 
 - 官网首页：[https://ig50.com/home.html](https://ig50.com/home.html)
-- 官网接口文档：[https://ig50.com/index.html](https://ig50.com/index.html) ← **最新接口以此为准**
+- 官网接口文档：[https://ig50.com/dataset-overview.html](https://ig50.com/dataset-overview.html) ← **最新接口以此为准**
 - 官网数据检索：[https://ig50.com/search.html](https://ig50.com/search.html)
 - 官网授权页面：[https://ig50.com/license.html](https://ig50.com/license.html)
 - 邮箱：`service@ig50.com`

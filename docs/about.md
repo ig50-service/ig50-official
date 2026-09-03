@@ -45,4 +45,4 @@ IG50 提供的数据仅用于研究与模型构建，不构成任何投资建议
 
 → 阅读 [免责声明](disclaimer.md)
 
-> 最新接口更新以 [官网接口文档](https://ig50.com/index.html) 为准。
+> 最新接口更新以 [官网接口文档](https://ig50.com/dataset-overview.html) 为准。

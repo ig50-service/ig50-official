@@ -123,6 +123,6 @@ Stop-ScheduledTask -TaskName IG50Service     # 停止
 
 ---
 
-下一步：[查看接口文档](api/README.md) ｜ [查看示例代码](examples.md) ｜ [官网接口文档（最新）](https://ig50.com/index.html)
+下一步：[查看接口文档](api/README.md) ｜ [查看示例代码](examples.md) ｜ [官网接口文档（最新）](https://ig50.com/dataset-overview.html)
 
-> 最新接口更新以 [官网接口文档](https://ig50.com/index.html) 为准。
+> 最新接口更新以 [官网接口文档](https://ig50.com/dataset-overview.html) 为准。

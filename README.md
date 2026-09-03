@@ -13,11 +13,11 @@
 ![Update](https://img.shields.io/badge/Realtime-3s%20落盘-orange)
 ![Market](https://img.shields.io/badge/Market-A股%20%7C%20基金%20%7C%20港股%20%7C%20美股-red)
 
-[官网首页](https://ig50.com/home.html) · [官网接口文档](https://ig50.com/index.html) · [数据文档](docs/api/README.md) · [安装指引](docs/install.md) · [关于IG50](docs/about.md)
+[官网首页](https://ig50.com/home.html) · [官网接口文档](https://ig50.com/dataset-overview.html) · [数据文档](docs/api/README.md) · [安装指引](docs/install.md) · [关于IG50](docs/about.md)
 
 </div>
 
-> ⚠ **最新接口更新以 [官网接口文档](https://ig50.com/index.html) 为准**。本仓库与 Wiki 不会经常维护，如需查阅最新接口、字段、路径，请访问 [官网接口文档](https://ig50.com/index.html) 或 [官网数据检索](https://ig50.com/search.html)。
+> ⚠ **最新接口更新以 [官网接口文档](https://ig50.com/dataset-overview.html) 为准**。本仓库与 Wiki 不会经常维护，如需查阅最新接口、字段、路径，请访问 [官网接口文档](https://ig50.com/dataset-overview.html) 或 [官网数据检索](https://ig50.com/search.html)。
 
 ---
 
@@ -52,7 +52,7 @@
 | 港股 | 31 个 | 港股列表、实时行情(2秒)、F10全档案、财务分析、K线19种级别 |
 | 美股 | 25 个 | 美股列表、实时行情、F10全档案、财务分析、K线 |
 
-**数据集总数：331 个** ｜ 完整接口文档见 [docs/api/](docs/api/README.md) ｜ [官网接口文档](https://ig50.com/index.html)（最新）
+**数据集总数：331 个** ｜ 完整接口文档见 [docs/api/](docs/api/README.md) ｜ [官网接口文档](https://ig50.com/dataset-overview.html)（最新）
 
 ## 与在线API平台有什么不同
 
@@ -152,12 +152,12 @@ print(f"交易时间：{kline.get('d')} 开盘：{kline.get('o')} 收盘：{klin
 - [授权说明](docs/pricing.md) — 授权方案与获取方式
 - [免责声明](docs/disclaimer.md) — 使用条款
 
-> 以上为本仓库镜像文档，**最新接口更新以 [官网接口文档](https://ig50.com/index.html) 为准**。
+> 以上为本仓库镜像文档，**最新接口更新以 [官网接口文档](https://ig50.com/dataset-overview.html) 为准**。
 
 ## 联系
 
 - 官网首页：[https://ig50.com/home.html](https://ig50.com/home.html)
-- 官网接口文档：[https://ig50.com/index.html](https://ig50.com/index.html) ← **最新接口以此为准**
+- 官网接口文档：[https://ig50.com/dataset-overview.html](https://ig50.com/dataset-overview.html) ← **最新接口以此为准**
 - 官网数据检索：[https://ig50.com/search.html](https://ig50.com/search.html)
 - 官网授权页面：[https://ig50.com/license.html](https://ig50.com/license.html)
 - 邮箱：service@ig50.com
