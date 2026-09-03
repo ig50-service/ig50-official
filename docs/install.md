@@ -16,12 +16,15 @@
 > - 由于数据服务器集群都在国内，为保证最低延迟，不推荐海外服务器部署。
 > - 每个独立的授权，需部署在独立的服务器上，因为每个市场至少几千只股票同时更新。
 
-### 最低服务器配置
+### 最低服务器配置（按授权市场）
 
-- **CPU**：8 核心
-- **内存**：16 GB
-- **硬盘**：200 GB
-- **指令集架构**：x86 64 位
+| 市场 | CPU | 内存 | 硬盘 |
+|------|-----|------|------|
+| A股 | 8 核心 | 16 GB | 200 GB |
+| 港股 | 8 核心 | 16 GB | 200 GB |
+| 美股 | 8 核心 | 16 GB | 600 GB |
+
+指令集架构：x86 64 位。以上配置为 IG50 程序专用，如需在同一环境安装其他程序，请自行评估增加配置。
 
 ### 公版程序已适配系统
 
@@ -34,7 +37,9 @@
 
 ## 3. 自动脚本安装
 
-> **警告**：Linux 系统请确保在 root 用户或有 sudo 权限的用户下执行。Windows 系统则以管理员身份运行脚本。
+> **警告**：Linux 系统请确保在 root 用户或有 sudo 权限的用户下执行。Windows 系统则以管理员身份运行脚本，安装前请务必关闭杀毒软件。
+
+安装脚本会要求填入 `user` 和 `market` 授权参数（联系客服获取），输出"IG50 安装成功且服务已正常运行！"即表示安装完成。程序会注册为系统服务，开机自启动，24 小时运行。
 
 ### Linux 安装
 
@@ -56,6 +61,14 @@ sed -i 's/\r$//' ./ig50_update.sh && chmod +x ./ig50_update.sh && ./ig50_update.
 sed -i 's/\r$//' ./ig50_uninstall.sh && chmod +x ./ig50_uninstall.sh && ./ig50_uninstall.sh
 ```
 
+**常用命令**：
+
+```bash
+systemctl start ig50      # 启动
+systemctl stop ig50       # 停止
+systemctl restart ig50    # 重启
+```
+
 ### Windows 安装
 
 1. 下载 [ig50_bat.zip](https://gitee.com/igtrade/ighub/releases/download/last/ig50_bat.zip)
@@ -68,6 +81,13 @@ sed -i 's/\r$//' ./ig50_uninstall.sh && chmod +x ./ig50_uninstall.sh && ./ig50_u
 | `ig50_update.bat` | 更新脚本 |
 | `ig50_uninstall.bat` | 卸载脚本 |
 
+**常用命令**（在 PowerShell 中执行）：
+
+```powershell
+Start-ScheduledTask -TaskName IG50Service    # 启动
+Stop-ScheduledTask -TaskName IG50Service     # 停止
+```
+
 ## 4. 程序关键文件与参数说明
 
 > 程序参数极简，尽可能做到开箱即用，所有参数皆有缺省值，且满足绝大部分用户。
@@ -75,7 +95,7 @@ sed -i 's/\r$//' ./ig50_uninstall.sh && chmod +x ./ig50_uninstall.sh && ./ig50_u
 ### 目录结构
 
 ```
-/opt/ig50
+/opt/ig50（Windows：C:\ig50）
   ├─appbak                                  # 更新脚本自动创建的程序备份目录
   ├─config                                  # 程序配置目录
   │  ├─ig50.license                         # 授权文件，联系 service@ig50.com 获取
@@ -94,7 +114,7 @@ sed -i 's/\r$//' ./ig50_uninstall.sh && chmod +x ./ig50_uninstall.sh && ./ig50_u
 
 | 参数 | 位置 | 缺省值 | 说明 |
 |------|------|--------|------|
-| `server.data.dir` | `ig50_user_config.properties` | `/ig50-data` | 数据存放目录 |
+| `server.data.dir` | `ig50_user_config.properties` | `/ig50-data`（Windows：`C:\ig50-data`） | 数据存放目录 |
 | `server.connect.timeout` | `ig50_user_config.properties` | `100` | 服务器连接超时时间（毫秒） |
 | `user` | `ig50.license` | - | 授权用户id |
 | `market` | `ig50.license` | - | 授权市场 |
