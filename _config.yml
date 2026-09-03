@@ -1,6 +1,6 @@
 # GitHub Pages 配置
 title: IG50 · 本地股票数据引擎
-description: 217个数据集覆盖A股港股基金 ｜ 3秒级实时行情+L2深度数据本地落盘
+description: 331个数据集覆盖A股港股美股基金 ｜ 3秒级实时行情+L2深度数据本地落盘
 
 # 主题（GitHub 官方支持，简洁干净）
 theme: jekyll-theme-primer
@@ -13,7 +13,6 @@ baseurl: "/ig50-official"
 exclude:
   - "docs/api"
   - "LICENSE"
-  - "CITATION.cff"
 
 # Markdown 配置
 markdown: kramdown

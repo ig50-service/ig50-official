@@ -1,6 +1,6 @@
 # 最新K线
 
-> 沪深京A股 / 指数相关 / 指数K线 / 最新K线
+> 沪深京A股 / 股票交易数据 / 股票K线 / 最新K线
 
 > 本页为镜像文档，**最新接口、字段、路径以 [官网接口文档](https://ig50.com/index.html) 为准**。
 
@@ -8,18 +8,18 @@
 
 | 项目 | 内容 |
 |------|------|
-| 数据名称 | 沪深京A股-指数相关-指数K线-最新K线 |
+| 数据名称 | 最新K线 |
 | 所属市场 | 沪深京A股 |
-| 本地路径 | `数据存放目录/time/real/time/{指数代码（包含sh/sz前缀，如：sh000001）}/{分时级别}` |
+| 本地路径 | `数据存放目录/time/real/time/{股票代码}/{分时级别}` |
 
 ## 功能描述
 
-根据《沪深主要指数》得到的指数代码（包含sh/sz前缀，如：sh000001）和分时级别获取最新K线数据，交易时间升序
+根据《股票列表》得到的股票代码和分时级别获取最新K线数据。
 
 ## 更新机制
 
-- **更新频率**：分钟级别盘中每5分钟更新，日线及以上级别盘后15:35更新
-- **完成耗时**：分钟级别更新耗时约30秒，日线及以上级别耗时约15分钟
+- **更新频率**：分钟级别盘中每5分钟更新，日线及以上级别盘后15:35更新。
+- **完成耗时**：分钟级别更新耗时约30秒，日线及以上级别耗时约15分钟。
 
 ## 数据格式
 
@@ -29,11 +29,31 @@
 
 ## 字段说明
 
-交易时间，短分时级别格式为yyyy-MM-dd HH:mm:ss，日线级别为yyyy-MM-dd, 开盘价（元）, 最高价（元）, 最低价（元）, 收盘价（元）, 成交量（股）, 成交额（元）, 振幅（%）, 换手率（%）, 涨跌幅（%）, 涨跌额（元）
+| 字段 | 类型 | 说明 |
+| --- | --- | --- |
+| d | string | 交易时间（短分时级别格式为yyyy-MM-ddHH:mm:ss，日线及以上级别为yyyy-MM-dd） |
+| ud | string | 更新时间（短分时级别格式为yyyy-MM-ddHH:mm:ss） |
+| o | number | 开盘价（元） |
+| h | number | 最高价（元） |
+| l | number | 最低价（元） |
+| c | number | 收盘价（元） |
+| v | number | 成交量（股） |
+| e | number | 成交额（元） |
+| zf | number | 振幅（%） |
+| hs | number | 换手率（%） |
+| zd | number | 涨跌幅（%） |
+| zde | number | 涨跌额（元） |
+| sz | number | 昨收价（元） |
+
+## 示例
+
+```json
+{"d":"2026-05-12 15:00","o":11.23,"h":11.25,"l":11.23,"c":11.25,"v":2394600,"e":26928518.00,"zf":0.18,"hs":null,"zd":0.09,"zde":0.01,"zs":11.24,"ud":"2026-05-12 15:30:44"}
+```
 
 ## 官网文档
 
-完整字段说明与示例数据：[https://ig50.com/index_sh-sz-index-history_trade.html?maodian=shsz-zxfsjy-title](https://ig50.com/index_sh-sz-index-history_trade.html?maodian=shsz-zxfsjy-title)
+完整字段说明与示例数据：[https://ig50.com/index_gupiao-kline.html?maodian=gupiao-zxfsjy-title](https://ig50.com/index_gupiao-kline.html?maodian=gupiao-zxfsjy-title)
 
 ---
 
