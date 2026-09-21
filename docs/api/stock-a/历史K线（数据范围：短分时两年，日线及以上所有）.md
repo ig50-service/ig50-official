@@ -42,8 +42,8 @@
 | hs | number | 换手率（%） |
 | zd | number | 涨跌幅（%） |
 | zde | number | 涨跌额（元） |
-| ud | string | 更新时间（短分时级别格式为yyyy-MM-ddHH:mm:ss） |
 | sz | number | 昨收价（元） |
+| ud | string | 更新时间（短分时级别格式为yyyy-MM-ddHH:mm:ss） |
 
 ## 示例
 
