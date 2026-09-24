@@ -1,0 +1,52 @@
+# 中国香港GDP同比
+
+> 港股 / 其它数据 / 宏观数据 / 中国香港GDP同比
+
+> 本页为镜像文档，**最新接口、字段、路径以 [官网接口文档](https://ig50.com/dataset-overview.html) 为准**。
+
+## 接口说明
+
+| 项目 | 内容 |
+|------|------|
+| 数据名称 | 中国香港GDP同比 |
+| 所属市场 | 港股 |
+| 本地路径 | `数据存放目录/time/hk/hongguan/gdpyoy` |
+
+## 功能描述
+
+获取中国香港GDP同比，按统计时间倒序。
+
+## 更新机制
+
+- **更新频率**：每天17:00。
+- **完成耗时**：约1小时。
+
+## 数据格式
+
+```
+[{},...]
+```
+
+## 字段说明
+
+| 字段 | 类型 | 说明 |
+| --- | --- | --- |
+| tjsj | string | 统计时间（yyyy-MM-dd） |
+| tjyf | string | 统计季度（中文，如“2026第3季度”） |
+| qz | number | 前值（同比%） |
+| xz | number | 现值（同比%，最新期未发布时为null） |
+| gbsj | string | 发布日期（yyyy-MM-dd） |
+
+## 示例
+
+```json
+[{"tjsj":"2026-09-01","tjyf":"2026第3季度","qz":6.90,"xz":null,"gbsj":"2026-11-13"},{"tjsj":"2026-06-01","tjyf":"2026第2季度","qz":5.60,"xz":6.90,"gbsj":"2026-08-14"}]
+```
+
+## 官网文档
+
+完整字段说明与示例数据：[https://ig50.com/indexHk_hk-hongguan.html?maodian=hk-hongguan-gdp-yoy-title](https://ig50.com/indexHk_hk-hongguan.html?maodian=hk-hongguan-gdp-yoy-title)
+
+---
+
+← [返回接口列表](README.md)

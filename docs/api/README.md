@@ -1,6 +1,6 @@
 # 接口文档
 
-> IG50 共提供 **340 个数据集**，覆盖沪深京A股、沪深数据中心、基金、港股、美股五大板块。所有数据以 JSON 文本文件落盘到本地，直接读取即可使用。
+> IG50 共提供 **518 个数据集**，覆盖沪深京A股、沪深数据中心、基金、港股、美股五大板块。所有数据以 JSON 文本文件落盘到本地，直接读取即可使用。
 
 > ⚠ **最新接口更新以 [官网接口文档](https://ig50.com/dataset-overview.html) 为准**。本仓库为镜像文档，可能滞后于官网，如需查阅最新接口、字段、路径，请访问 [官网接口文档](https://ig50.com/dataset-overview.html) 或 [官网数据检索](https://ig50.com/search.html)。
 
@@ -175,7 +175,7 @@
 
 ## 沪深数据中心
 
-> 69个数据集 · 龙虎榜、南北向资金、市场异动、财务五维分析、机构持股
+> 215个数据集 · 龙虎榜、南北向资金、市场异动、财务五维分析、机构持股
 
 | # | 接口名称 | 本地路径 | 更新频率 |
 |---|---------|---------|---------|
@@ -248,6 +248,152 @@
 | 67 | [深股通十大成交股](stock-center/深股通十大成交股.md) | `all/nxbx/sgtsdcj/{交易日}` | 每天20:00。 |
 | 68 | [港股通（沪）十大成交股](stock-center/港股通（沪）十大成交股.md) | `all/nxbx/ggthsdcj/{交易日}` | 每天20:00。 |
 | 69 | [港股通（深）十大成交股](stock-center/港股通（深）十大成交股.md) | `all/nxbx/ggtssdcj/{交易日}` | 每天20:00。 |
+| 70 | [居民消费价格指数（CPI）](stock-center/居民消费价格指数（CPI）.md) | `time/hongguan/cpi` | 每天21:00。 |
+| 71 | [工业品出厂价格指数（PPI）](stock-center/工业品出厂价格指数（PPI）.md) | `time/hongguan/ppi` | 每天21:00。 |
+| 72 | [国内生产总值（GDP）](stock-center/国内生产总值（GDP）.md) | `time/hongguan/gdp` | 每天21:00。 |
+| 73 | [采购经理人指数（PMI）](stock-center/采购经理人指数（PMI）.md) | `time/hongguan/pmi` | 每天21:00。 |
+| 74 | [企业商品价格指数](stock-center/企业商品价格指数.md) | `time/hongguan/qyspjg` | 每天21:00。 |
+| 75 | [工业增加值增长](stock-center/工业增加值增长.md) | `time/hongguan/gyzjz` | 每天21:00。 |
+| 76 | [城镇固定资产投资](stock-center/城镇固定资产投资.md) | `time/hongguan/gdzctz` | 每天21:00。 |
+| 77 | [社会消费品零售总额](stock-center/社会消费品零售总额.md) | `time/hongguan/xfp` | 每天21:00。 |
+| 78 | [企业景气及企业家信心指数](stock-center/企业景气及企业家信心指数.md) | `time/hongguan/qyjqzs` | 每天21:00。 |
+| 79 | [消费者信心指数](stock-center/消费者信心指数.md) | `time/hongguan/xfzxx` | 每天21:00。 |
+| 80 | [海关进出口增减情况一览表](stock-center/海关进出口增减情况一览表.md) | `time/hongguan/hgjck` | 每天21:00。 |
+| 81 | [外汇和黄金储备](stock-center/外汇和黄金储备.md) | `time/hongguan/hjwh` | 每天21:00。 |
+| 82 | [外商直接投资（实际利用外资金额）](stock-center/外商直接投资（实际利用外资金额）.md) | `time/hongguan/fdi` | 每天21:00。 |
+| 83 | [财政收入](stock-center/财政收入.md) | `time/hongguan/czsr` | 每天21:00。 |
+| 84 | [全国税收收入](stock-center/全国税收收入.md) | `time/hongguan/qgsssr` | 每天21:00。 |
+| 85 | [国内成品油价格](stock-center/国内成品油价格.md) | `time/hongguan/youjia` | 每天21:00。 |
+| 86 | [房价指数](stock-center/房价指数.md) | `time/hongguan/newhouse/｛年份-月份｝` | 每天21:00。 |
+| 87 | [货币供应量（M0/M1/M2）](stock-center/货币供应量（M0_M1_M2）.md) | `time/hongguan/hbgyl` | 每天21:00。 |
+| 88 | [新增信贷数据](stock-center/新增信贷数据.md) | `time/hongguan/xzxd` | 每天21:00。 |
+| 89 | [本外币存款](stock-center/本外币存款.md) | `time/hongguan/wbck` | 每天21:00。 |
+| 90 | [外汇贷款数据](stock-center/外汇贷款数据.md) | `time/hongguan/whxd` | 每天21:00。 |
+| 91 | [LPR数据](stock-center/LPR数据.md) | `time/hongguan/lpr` | 每天21:00。 |
+| 92 | [利率调整](stock-center/利率调整.md) | `time/hongguan/yhll` | 每天21:00。 |
+| 93 | [存款准备金率](stock-center/存款准备金率.md) | `time/hongguan/ckzbj` | 每天21:00。 |
+| 94 | [全国股票交易统计表](stock-center/全国股票交易统计表.md) | `time/hongguan/gpjytj` | 每天21:00。 |
+| 95 | [交易结算资金（银证转账）](stock-center/交易结算资金（银证转账）.md) | `time/hongguan/banktransfer` | 每天21:00。 |
+| 96 | [Shibor人民币（隔夜）](stock-center/Shibor人民币（隔夜）.md) | `time/hongguan/shibor/on` | 每天21:00。 |
+| 97 | [伦敦银行同业拆借市场](stock-center/伦敦银行同业拆借市场.md) | `time/hongguan/libor/libor` | 每天21:00。 |
+| 98 | [Shibor人民币（1周）](stock-center/Shibor人民币（1周）.md) | `time/hongguan/shibor/1w` | 每天21:00。 |
+| 99 | [Shibor人民币（2周）](stock-center/Shibor人民币（2周）.md) | `time/hongguan/shibor/2w` | 每天21:00。 |
+| 100 | [Shibor人民币（1月）](stock-center/Shibor人民币（1月）.md) | `time/hongguan/shibor/1m` | 每天21:00。 |
+| 101 | [Shibor人民币（3月）](stock-center/Shibor人民币（3月）.md) | `time/hongguan/shibor/3m` | 每天21:00。 |
+| 102 | [Shibor人民币（6月）](stock-center/Shibor人民币（6月）.md) | `time/hongguan/shibor/6m` | 每天21:00。 |
+| 103 | [Shibor人民币（9月）](stock-center/Shibor人民币（9月）.md) | `time/hongguan/shibor/9m` | 每天21:00。 |
+| 104 | [Shibor人民币（1年）](stock-center/Shibor人民币（1年）.md) | `time/hongguan/shibor/1y` | 每天21:00。 |
+| 105 | [Chibor人民币（隔夜）](stock-center/Chibor人民币（隔夜）.md) | `time/hongguan/chibor/on` | 每天21:00。 |
+| 106 | [Chibor人民币（1周）](stock-center/Chibor人民币（1周）.md) | `time/hongguan/chibor/1w` | 每天21:00。 |
+| 107 | [Chibor人民币（2周）](stock-center/Chibor人民币（2周）.md) | `time/hongguan/chibor/2w` | 每天21:00。 |
+| 108 | [Chibor人民币（3周）](stock-center/Chibor人民币（3周）.md) | `time/hongguan/chibor/3w` | 每天21:00。 |
+| 109 | [Chibor人民币（1月）](stock-center/Chibor人民币（1月）.md) | `time/hongguan/chibor/1m` | 每天21:00。 |
+| 110 | [Chibor人民币（2月）](stock-center/Chibor人民币（2月）.md) | `time/hongguan/chibor/2m` | 每天21:00。 |
+| 111 | [Chibor人民币（3月）](stock-center/Chibor人民币（3月）.md) | `time/hongguan/chibor/3m` | 每天21:00。 |
+| 112 | [Chibor人民币（4月）](stock-center/Chibor人民币（4月）.md) | `time/hongguan/chibor/4m` | 每天21:00。 |
+| 113 | [Chibor人民币（6月）](stock-center/Chibor人民币（6月）.md) | `time/hongguan/chibor/6m` | 每天21:00。 |
+| 114 | [Chibor人民币（9月）](stock-center/Chibor人民币（9月）.md) | `time/hongguan/chibor/9m` | 每天21:00。 |
+| 115 | [Chibor人民币（1年）](stock-center/Chibor人民币（1年）.md) | `time/hongguan/chibor/1y` | 每天21:00。 |
+| 116 | [Euribor欧元（1周）](stock-center/Euribor欧元（1周）.md) | `time/hongguan/euribor/1w` | 每天21:00。 |
+| 117 | [Euribor欧元（1月）](stock-center/Euribor欧元（1月）.md) | `time/hongguan/euribor/1m` | 每天21:00。 |
+| 118 | [Euribor欧元（3月）](stock-center/Euribor欧元（3月）.md) | `time/hongguan/euribor/3m` | 每天21:00。 |
+| 119 | [Euribor欧元（6月）](stock-center/Euribor欧元（6月）.md) | `time/hongguan/euribor/6m` | 每天21:00。 |
+| 120 | [Euribor欧元（1年）](stock-center/Euribor欧元（1年）.md) | `time/hongguan/euribor/1y` | 每天21:00。 |
+| 121 | [Hibor港币（隔夜）](stock-center/Hibor港币（隔夜）.md) | `time/hongguan/hibor/hkdon` | 每天21:00。 |
+| 122 | [Hibor港币（1周）](stock-center/Hibor港币（1周）.md) | `time/hongguan/hibor/hkd1w` | 每天21:00。 |
+| 123 | [Hibor港币（2周）](stock-center/Hibor港币（2周）.md) | `time/hongguan/hibor/hkd2w` | 每天21:00。 |
+| 124 | [Hibor港币（1月）](stock-center/Hibor港币（1月）.md) | `time/hongguan/hibor/hkd1m` | 每天21:00。 |
+| 125 | [Hibor港币（2月）](stock-center/Hibor港币（2月）.md) | `time/hongguan/hibor/hkd2m` | 每天21:00。 |
+| 126 | [Hibor港币（3月）](stock-center/Hibor港币（3月）.md) | `time/hongguan/hibor/hkd3m` | 每天21:00。 |
+| 127 | [Hibor港币（6月）](stock-center/Hibor港币（6月）.md) | `time/hongguan/hibor/hkd6m` | 每天21:00。 |
+| 128 | [Hibor港币（1年）](stock-center/Hibor港币（1年）.md) | `time/hongguan/hibor/hkd1y` | 每天21:00。 |
+| 129 | [Hibor人民币（隔夜）](stock-center/Hibor人民币（隔夜）.md) | `time/hongguan/hibor/cnhon` | 每天21:00。 |
+| 130 | [Hibor人民币（1周）](stock-center/Hibor人民币（1周）.md) | `time/hongguan/hibor/cnh1w` | 每天21:00。 |
+| 131 | [Hibor人民币（2周）](stock-center/Hibor人民币（2周）.md) | `time/hongguan/hibor/cnh2w` | 每天21:00。 |
+| 132 | [Hibor人民币（1月）](stock-center/Hibor人民币（1月）.md) | `time/hongguan/hibor/cnh1m` | 每天21:00。 |
+| 133 | [Hibor人民币（2月）](stock-center/Hibor人民币（2月）.md) | `time/hongguan/hibor/cnh2m` | 每天21:00。 |
+| 134 | [Hibor人民币（3月）](stock-center/Hibor人民币（3月）.md) | `time/hongguan/hibor/cnh3m` | 每天21:00。 |
+| 135 | [Hibor人民币（6月）](stock-center/Hibor人民币（6月）.md) | `time/hongguan/hibor/cnh6m` | 每天21:00。 |
+| 136 | [Hibor人民币（1年）](stock-center/Hibor人民币（1年）.md) | `time/hongguan/hibor/cnh1y` | 每天21:00。 |
+| 137 | [农副指数](stock-center/农副指数.md) | `time/hongguan/hyzs/nfzs` | 每天21:00。 |
+| 138 | [菜篮子产品批发价格指数](stock-center/菜篮子产品批发价格指数.md) | `time/hongguan/hyzs/clz` | 每天21:00。 |
+| 139 | [农产品批发价格总指数](stock-center/农产品批发价格总指数.md) | `time/hongguan/hyzs/ncp` | 每天21:00。 |
+| 140 | [美原油指数CONC](stock-center/美原油指数CONC.md) | `time/hongguan/hyzs/myy` | 每天21:00。 |
+| 141 | [能源指数](stock-center/能源指数.md) | `time/hongguan/hyzs/ny` | 每天21:00。 |
+| 142 | [大宗商品价格指数](stock-center/大宗商品价格指数.md) | `time/hongguan/hyzs/dzs` | 每天21:00。 |
+| 143 | [焦炭指数:综合](stock-center/焦炭指数_综合.md) | `time/hongguan/hyzs/jt` | 每天21:00。 |
+| 144 | [化工指数](stock-center/化工指数.md) | `time/hongguan/hyzs/hg` | 每天21:00。 |
+| 145 | [钢铁指数](stock-center/钢铁指数.md) | `time/hongguan/hyzs/gt` | 每天21:00。 |
+| 146 | [普钢指数:综合](stock-center/普钢指数_综合.md) | `time/hongguan/hyzs/pg` | 每天21:00。 |
+| 147 | [铁矿石指数:综合](stock-center/铁矿石指数_综合.md) | `time/hongguan/hyzs/tk` | 每天21:00。 |
+| 148 | [有色指数](stock-center/有色指数.md) | `time/hongguan/hyzs/ys` | 每天21:00。 |
+| 149 | [有色金属指数:镍](stock-center/有色金属指数_镍.md) | `time/hongguan/hyzs/ysn` | 每天21:00。 |
+| 150 | [有色金属指数:锌](stock-center/有色金属指数_锌.md) | `time/hongguan/hyzs/ysx` | 每天21:00。 |
+| 151 | [有色金属指数:铅](stock-center/有色金属指数_铅.md) | `time/hongguan/hyzs/ysq` | 每天21:00。 |
+| 152 | [有色金属指数:铝](stock-center/有色金属指数_铝.md) | `time/hongguan/hyzs/ysl` | 每天21:00。 |
+| 153 | [有色金属指数:铜](stock-center/有色金属指数_铜.md) | `time/hongguan/hyzs/yst` | 每天21:00。 |
+| 154 | [RPI:金银珠宝:环比](stock-center/RPI_金银珠宝_环比.md) | `time/hongguan/hyzs/jb` | 每天21:00。 |
+| 155 | [黄金指数](stock-center/黄金指数.md) | `time/hongguan/hyzs/hj` | 每天21:00。 |
+| 156 | [主要城市混凝土价格:C20:均价](stock-center/主要城市混凝土价格_C20_均价.md) | `time/hongguan/hyzs/hnt` | 每天21:00。 |
+| 157 | [建材指数](stock-center/建材指数.md) | `time/hongguan/hyzs/jc` | 每天21:00。 |
+| 158 | [建材价格指数:总指数](stock-center/建材价格指数_总指数.md) | `time/hongguan/hyzs/jcz` | 每天21:00。 |
+| 159 | [生产资料价格指数:机械设备:定基数](stock-center/生产资料价格指数_机械设备_定基数.md) | `time/hongguan/hyzs/scjx` | 每天21:00。 |
+| 160 | [中国玻璃综合指数](stock-center/中国玻璃综合指数.md) | `time/hongguan/hyzs/bl` | 每天21:00。 |
+| 161 | [五金机电价格指数:总指数](stock-center/五金机电价格指数_总指数.md) | `time/hongguan/hyzs/wj` | 每天21:00。 |
+| 162 | [新造船价格指数:CNTPI指数](stock-center/新造船价格指数_CNTPI指数.md) | `time/hongguan/hyzs/xzc` | 每天21:00。 |
+| 163 | [永康五金交易价格指数:总指数](stock-center/永康五金交易价格指数_总指数.md) | `time/hongguan/hyzs/yk` | 每天21:00。 |
+| 164 | [GAIN.整体价格变换指数:汽车](stock-center/GAIN.整体价格变换指数_汽车.md) | `time/hongguan/hyzs/gain` | 每天21:00。 |
+| 165 | [生产资料价格指数:汽车:定基数](stock-center/生产资料价格指数_汽车_定基数.md) | `time/hongguan/hyzs/scqc` | 每天21:00。 |
+| 166 | [价格:VA:国产:50万IU/g:25kg](stock-center/价格_VA_国产_50万IU_g_25kg.md) | `time/hongguan/hyzs/va` | 每天21:00。 |
+| 167 | [中药材周价格定基指数](stock-center/中药材周价格定基指数.md) | `time/hongguan/hyzs/zyca` | 每天21:00。 |
+| 168 | [物流景气指数](stock-center/物流景气指数.md) | `time/hongguan/hyzs/wljq` | 每天21:00。 |
+| 169 | [民航货运量:当月值](stock-center/民航货运量_当月值.md) | `time/hongguan/hyzs/mhhy` | 每天21:00。 |
+| 170 | [民航客运量:当月值](stock-center/民航客运量_当月值.md) | `time/hongguan/hyzs/mhky` | 每天21:00。 |
+| 171 | [全国主要港口:旅客吞吐量:当月值](stock-center/全国主要港口_旅客吞吐量_当月值.md) | `time/hongguan/hyzs/gclk` | 每天21:00。 |
+| 172 | [全国主要港口:货物吞吐量:当月值](stock-center/全国主要港口_货物吞吐量_当月值.md) | `time/hongguan/hyzs/gchw` | 每天21:00。 |
+| 173 | [水运货运量:当月值](stock-center/水运货运量_当月值.md) | `time/hongguan/hyzs/syhy` | 每天21:00。 |
+| 174 | [水运客运量:当月值](stock-center/水运客运量_当月值.md) | `time/hongguan/hyzs/syky` | 每天21:00。 |
+| 175 | [成品油运输指数（BCTI）](stock-center/成品油运输指数（BCTI）.md) | `time/hongguan/hyzs/bcti` | 每天21:00。 |
+| 176 | [原油运输指数（BDTI）](stock-center/原油运输指数（BDTI）.md) | `time/hongguan/hyzs/bdti` | 每天21:00。 |
+| 177 | [超灵便型船运价指数（BSI）](stock-center/超灵便型船运价指数（BSI）.md) | `time/hongguan/hyzs/bsi` | 每天21:00。 |
+| 178 | [海岬型运费指数（BCI）](stock-center/海岬型运费指数（BCI）.md) | `time/hongguan/hyzs/bci` | 每天21:00。 |
+| 179 | [巴拿马型运费指数（BPI）](stock-center/巴拿马型运费指数（BPI）.md) | `time/hongguan/hyzs/bpi` | 每天21:00。 |
+| 180 | [波罗的海干散货指数（BDI）](stock-center/波罗的海干散货指数（BDI）.md) | `time/hongguan/hyzs/bdi` | 每天21:00。 |
+| 181 | [公路货运量:当月值](stock-center/公路货运量_当月值.md) | `time/hongguan/hyzs/glhy` | 每天21:00。 |
+| 182 | [公路客运量:当月值](stock-center/公路客运量_当月值.md) | `time/hongguan/hyzs/glky` | 每天21:00。 |
+| 183 | [铁路货运量:当月值](stock-center/铁路货运量_当月值.md) | `time/hongguan/hyzs/tlhy` | 每天21:00。 |
+| 184 | [铁路客运量:当月值](stock-center/铁路客运量_当月值.md) | `time/hongguan/hyzs/tlky` | 每天21:00。 |
+| 185 | [货运量总计:当月值](stock-center/货运量总计_当月值.md) | `time/hongguan/hyzs/hy` | 每天21:00。 |
+| 186 | [客运量总计:当月值](stock-center/客运量总计_当月值.md) | `time/hongguan/hyzs/ky` | 每天21:00。 |
+| 187 | [费城半导体指数（SOX）](stock-center/费城半导体指数（SOX）.md) | `time/hongguan/hyzs/sox` | 每天21:00。 |
+| 188 | [义乌小商品指数:电子元器件:价格指数](stock-center/义乌小商品指数_电子元器件_价格指数.md) | `time/hongguan/hyzs/ywdz` | 每天21:00。 |
+| 189 | [华强北价格指数:综合指数](stock-center/华强北价格指数_综合指数.md) | `time/hongguan/hyzs/hqbzh` | 每天21:00。 |
+| 190 | [交易景气指数:安防产品](stock-center/交易景气指数_安防产品.md) | `time/hongguan/hyzs/afjq` | 每天21:00。 |
+| 191 | [中关村电子产品价格指数:软件产品](stock-center/中关村电子产品价格指数_软件产品.md) | `time/hongguan/hyzs/zgrj` | 每天21:00。 |
+| 192 | [华强北价格指数:综合指数](stock-center/华强北价格指数_综合指数-2.md) | `time/hongguan/hyzs/hqbxx` | 每天21:00。 |
+| 193 | [华强北价格指数:电子元器件](stock-center/华强北价格指数_电子元器件.md) | `time/hongguan/hyzs/hqbdz` | 每天21:00。 |
+| 194 | [出口交货值:电气机械及器材制造业:当月值](stock-center/出口交货值_电气机械及器材制造业_当月值.md) | `time/hongguan/hyzs/ckjh` | 每天21:00。 |
+| 195 | [交易价格指数:电子电工:电线、电缆:电气设备用电缆](stock-center/交易价格指数_电子电工_电线、电缆_电气设备用电缆.md) | `time/hongguan/hyzs/dxdl` | 每天21:00。 |
+| 196 | [手机出货量:当月值](stock-center/手机出货量_当月值.md) | `time/hongguan/hyzs/sjch` | 每天21:00。 |
+| 197 | [中国电信:移动用户数:当月新增](stock-center/中国电信_移动用户数_当月新增.md) | `time/hongguan/hyzs/dxyh` | 每天21:00。 |
+| 198 | [用电量:工业:当月值](stock-center/用电量_工业_当月值.md) | `time/hongguan/hyzs/gydl` | 每天21:00。 |
+| 199 | [义乌小商品价格指数:工艺品类](stock-center/义乌小商品价格指数_工艺品类.md) | `time/hongguan/hyzs/ywgy` | 每天21:00。 |
+| 200 | [国内新开业酒店数:三星级以上:合计](stock-center/国内新开业酒店数_三星级以上_合计.md) | `time/hongguan/hyzs/xyjd` | 每天21:00。 |
+| 201 | [国内饭店餐饮收入比:当月值](stock-center/国内饭店餐饮收入比_当月值.md) | `time/hongguan/hyzs/fdcy` | 每天21:00。 |
+| 202 | [国内饭店客房收入比:当月值](stock-center/国内饭店客房收入比_当月值.md) | `time/hongguan/hyzs/fdkf` | 每天21:00。 |
+| 203 | [国内饭店平均房价（ADR平均）:当月值](stock-center/国内饭店平均房价（ADR平均）_当月值.md) | `time/hongguan/hyzs/adr` | 每天21:00。 |
+| 204 | [全国百家重点大型零售企业商品零售额:当月同比](stock-center/全国百家重点大型零售企业商品零售额_当月同比.md) | `time/hongguan/hyzs/bjls` | 每天21:00。 |
+| 205 | [社会消费品零售总额:当月值](stock-center/社会消费品零售总额_当月值.md) | `time/hongguan/hyzs/shxf` | 每天21:00。 |
+| 206 | [国房景气指数](stock-center/国房景气指数.md) | `time/hongguan/hyzs/gfjq` | 每天21:00。 |
+| 207 | [商品房销售额:当月值](stock-center/商品房销售额_当月值.md) | `time/hongguan/hyzs/spf` | 每天21:00。 |
+| 208 | [房地产开发投资完成额:累计值](stock-center/房地产开发投资完成额_累计值.md) | `time/hongguan/hyzs/fdckf` | 每天21:00。 |
+| 209 | [原保险保费收入:寿险合计](stock-center/原保险保费收入_寿险合计.md) | `time/hongguan/hyzs/bxsf` | 每天21:00。 |
+| 210 | [银行理财产品发行数量:当月值](stock-center/银行理财产品发行数量_当月值.md) | `time/hongguan/hyzs/yhlc` | 每天21:00。 |
+| 211 | [证券市场交易结算资金余额:期末数](stock-center/证券市场交易结算资金余额_期末数.md) | `time/hongguan/hyzs/zjye` | 每天21:00。 |
+| 212 | [总资产:银行业金融机构](stock-center/总资产_银行业金融机构.md) | `time/hongguan/hyzs/yhzzc` | 每天21:00。 |
+| 213 | [城镇固定资产投资:电信、广播电视和卫星传输服务:全国:累计值](stock-center/城镇固定资产投资_电信、广播电视和卫星传输服务_全国_累计值.md) | `time/hongguan/hyzs/czdx` | 每天21:00。 |
+| 214 | [城镇固定资产投资完成额:水利、环境和公共设施管理业:累计值](stock-center/城镇固定资产投资完成额_水利、环境和公共设施管理业_累计值.md) | `time/hongguan/hyzs/czsl` | 每天21:00。 |
+| 215 | [固定资产投资完成额:电力、煤气、及水的生产和供应业:累计值](stock-center/固定资产投资完成额_电力、煤气、及水的生产和供应业_累计值.md) | `time/hongguan/hyzs/gzdl` | 每天21:00。 |
 
 ## 基金
 
@@ -329,73 +475,105 @@
 
 ## 港股
 
-> 31个数据集 · 港股列表、实时行情(2秒)、F10全档案、财务分析、K线24种级别
+> 40个数据集 · 港股列表、实时行情(2秒)、F10全档案、财务分析、K线24种级别
 
 | # | 接口名称 | 本地路径 | 更新频率 |
 |---|---------|---------|---------|
 | 1 | [港股列表](hk-stock/港股列表.md) | `base/gphk` | 每天0点。 |
-| 2 | [证券资料](hk-stock/证券资料.md) | `time/hk/f10/secinfo/{股票代码}` | 每天17:30，耗时约10个小时。 |
-| 3 | [公司资料](hk-stock/公司资料.md) | `time/hk/f10/orgprofile/{股票代码}` | 每天17:30，耗时约10个小时。 |
-| 4 | [首发资料](hk-stock/首发资料.md) | `time/hk/f10/ipo/{股票代码}` | 每天17:30，耗时约10个小时。 |
-| 5 | [窝轮](hk-stock/窝轮.md) | `time/hk/f10/warrant/{股票代码}` | 每天17:30，耗时约10个小时。 |
-| 6 | [熊牛证](hk-stock/熊牛证.md) | `time/hk/f10/cbbc/{股票代码}` | 每天17:30，耗时约10个小时。 |
-| 7 | [董事会成员](hk-stock/董事会成员.md) | `time/hk/f10/board/{股票代码}` | 每天17:30，耗时约10个小时。 |
-| 8 | [管理层成员](hk-stock/管理层成员.md) | `time/hk/f10/manager/{股票代码}` | 每天17:30，耗时约10个小时。 |
-| 9 | [业务展望](hk-stock/业务展望.md) | `time/hk/f10/businessexpectation/{股票代码}` | 每天17:30，耗时约10个小时。 |
-| 10 | [主要指标](hk-stock/主要指标.md) | `time/hk/f10/finmainindex/{股票代码}` | 每天17:30，耗时约10个小时。 |
-| 11 | [资产负债表](hk-stock/资产负债表.md) | `time/hk/f10/balance/{股票代码}` | 每天17:30，耗时约10个小时。 |
-| 12 | [利润表](hk-stock/利润表.md) | `time/hk/f10/profit/{股票代码}` | 每天17:30，耗时约10个小时。 |
-| 13 | [现金流量表](hk-stock/现金流量表.md) | `time/hk/f10/cashflow/{股票代码}` | 每天17:30，耗时约10个小时。 |
-| 14 | [历史股本变化](hk-stock/历史股本变化.md) | `time/hk/f10/equitychange/{股票代码}` | 每天17:30，耗时约10个小时。 |
-| 15 | [董事及股东权益](hk-stock/董事及股东权益.md) | `time/hk/f10/holder/{股票代码}` | 每天17:30，耗时约10个小时。 |
-| 16 | [历史股权变动（董事增减持）](hk-stock/历史股权变动（董事增减持）.md) | `time/hk/f10/shequitychg/{股票代码}` | 每天17:30，耗时约10个小时。 |
-| 17 | [投资评级](hk-stock/投资评级.md) | `time/hk/f10/rating/{股票代码}` | 每天17:30，耗时约10个小时。 |
-| 18 | [市场表现对比](hk-stock/市场表现对比.md) | `time/hk/f10/industrymarket/{股票代码}` | 每天17:30，耗时约10个小时。 |
-| 19 | [成长性对比](hk-stock/成长性对比.md) | `time/hk/f10/industrygrowth/{股票代码}` | 每天17:30，耗时约10个小时。 |
-| 20 | [估值对比](hk-stock/估值对比.md) | `time/hk/f10/industryvaluation/{股票代码}` | 每天17:30，耗时约10个小时。 |
-| 21 | [规模对比](hk-stock/规模对比.md) | `time/hk/f10/industryscale/{股票代码}` | 每天17:30，耗时约10个小时。 |
-| 22 | [大事提醒](hk-stock/大事提醒.md) | `time/hk/f10/corporateevent/{股票代码}` | 每天17:30，耗时约10个小时。 |
-| 23 | [分红派息](hk-stock/分红派息.md) | `time/hk/f10/dividend/{股票代码}` | 每天17:30，耗时约10个小时。 |
-| 24 | [股票回购](hk-stock/股票回购.md) | `time/hk/f10/repo/{股票代码}` | 每天17:30，耗时约10个小时。 |
-| 25 | [拆股合并](hk-stock/拆股合并.md) | `time/hk/f10/splitmerge/{股票代码}` | 每天17:30，耗时约10个小时。 |
-| 26 | [相关公告](hk-stock/相关公告.md) | `time/hk/f10/notice/{股票代码}` | 每天17:30，耗时约10个小时。 |
+| 2 | [证券资料](hk-stock/证券资料.md) | `time/hk/f10/secinfo/{股票代码}` | 每天17:30。 |
+| 3 | [公司资料](hk-stock/公司资料.md) | `time/hk/f10/orgprofile/{股票代码}` | 每天17:30。 |
+| 4 | [首发资料](hk-stock/首发资料.md) | `time/hk/f10/ipo/{股票代码}` | 每天17:30。 |
+| 5 | [窝轮](hk-stock/窝轮.md) | `time/hk/f10/warrant/{股票代码}` | 每天17:30。 |
+| 6 | [熊牛证](hk-stock/熊牛证.md) | `time/hk/f10/cbbc/{股票代码}` | 每天17:30。 |
+| 7 | [董事会成员](hk-stock/董事会成员.md) | `time/hk/f10/board/{股票代码}` | 每天17:30。 |
+| 8 | [管理层成员](hk-stock/管理层成员.md) | `time/hk/f10/manager/{股票代码}` | 每天17:30。 |
+| 9 | [业务展望](hk-stock/业务展望.md) | `time/hk/f10/businessexpectation/{股票代码}` | 每天17:30。 |
+| 10 | [主要指标](hk-stock/主要指标.md) | `time/hk/f10/finmainindex/{股票代码}` | 每天17:30。 |
+| 11 | [资产负债表](hk-stock/资产负债表.md) | `time/hk/f10/balance/{股票代码}` | 每天17:30。 |
+| 12 | [利润表](hk-stock/利润表.md) | `time/hk/f10/profit/{股票代码}` | 每天17:30。 |
+| 13 | [现金流量表](hk-stock/现金流量表.md) | `time/hk/f10/cashflow/{股票代码}` | 每天17:30。 |
+| 14 | [历史股本变化](hk-stock/历史股本变化.md) | `time/hk/f10/equitychange/{股票代码}` | 每天17:30。 |
+| 15 | [董事及股东权益](hk-stock/董事及股东权益.md) | `time/hk/f10/holder/{股票代码}` | 每天17:30。 |
+| 16 | [历史股权变动（董事增减持）](hk-stock/历史股权变动（董事增减持）.md) | `time/hk/f10/shequitychg/{股票代码}` | 每天17:30。 |
+| 17 | [投资评级](hk-stock/投资评级.md) | `time/hk/f10/rating/{股票代码}` | 每天17:30。 |
+| 18 | [市场表现对比](hk-stock/市场表现对比.md) | `time/hk/f10/industrymarket/{股票代码}` | 每天17:30。 |
+| 19 | [成长性对比](hk-stock/成长性对比.md) | `time/hk/f10/industrygrowth/{股票代码}` | 每天17:30。 |
+| 20 | [估值对比](hk-stock/估值对比.md) | `time/hk/f10/industryvaluation/{股票代码}` | 每天17:30。 |
+| 21 | [规模对比](hk-stock/规模对比.md) | `time/hk/f10/industryscale/{股票代码}` | 每天17:30。 |
+| 22 | [大事提醒](hk-stock/大事提醒.md) | `time/hk/f10/corporateevent/{股票代码}` | 每天17:30。 |
+| 23 | [分红派息](hk-stock/分红派息.md) | `time/hk/f10/dividend/{股票代码}` | 每天17:30。 |
+| 24 | [股票回购](hk-stock/股票回购.md) | `time/hk/f10/repo/{股票代码}` | 每天17:30。 |
+| 25 | [拆股合并](hk-stock/拆股合并.md) | `time/hk/f10/splitmerge/{股票代码}` | 每天17:30。 |
+| 26 | [相关公告](hk-stock/相关公告.md) | `time/hk/f10/notice/{股票代码}` | 每天17:30。 |
 | 27 | [实时行情数据（2秒落盘）](hk-stock/实时行情数据（2秒落盘）.md) | `time/hk/real/{股票或指数代码}` | 交易时间段每10秒。 |
 | 28 | [当天分时成交明细](hk-stock/当天分时成交明细.md) | `time/hk/real/trace/onebyone/{股票代码}` | 交易时间段每2分钟。 |
 | 29 | [当天分钟分时成交](hk-stock/当天分钟分时成交.md) | `time/hk/real/trace/timedeal/{股票代码}` | 交易时间段每2分钟。 |
 | 30 | [最新K线](hk-stock/最新K线.md) | `time/hk/real/time/{股票或指数代码}/{分时级别}` | 分钟级别盘中每10秒更新，日线及以上级别盘后16:30更新。 |
 | 31 | [历史K线（数据范围：短分时4万根，日线及以上所有）](hk-stock/历史K线（数据范围：短分时4万根，日线及以上所有）.md) | `time/hk/history/trade/{股票或指数代码}/{分时级别}` | 分钟级别盘中每10秒更新，日线及以上级别每天16:30更新。 |
+| 32 | [中国香港消费者物价指数](hk-stock/中国香港消费者物价指数.md) | `time/hk/hongguan/cpi` | 每天17:00。 |
+| 33 | [中国香港消费者物价指数年率](hk-stock/中国香港消费者物价指数年率.md) | `time/hk/hongguan/cpiyoy` | 每天17:00。 |
+| 34 | [中国香港失业率](hk-stock/中国香港失业率.md) | `time/hk/hongguan/syl` | 每天17:00。 |
+| 35 | [中国香港GDP](hk-stock/中国香港GDP.md) | `time/hk/hongguan/gdp` | 每天17:00。 |
+| 36 | [中国香港GDP同比](hk-stock/中国香港GDP同比.md) | `time/hk/hongguan/gdpyoy` | 每天17:00。 |
+| 37 | [中国香港楼宇买卖合约数量](hk-stock/中国香港楼宇买卖合约数量.md) | `time/hk/hongguan/lysl` | 每天17:00。 |
+| 38 | [中国香港楼宇买卖合约成交金额](hk-stock/中国香港楼宇买卖合约成交金额.md) | `time/hk/hongguan/lycje` | 每天17:00。 |
+| 39 | [中国香港商品贸易差额年率](hk-stock/中国香港商品贸易差额年率.md) | `time/hk/hongguan/myce` | 每天17:00。 |
+| 40 | [中国香港制造业PPI年率](hk-stock/中国香港制造业PPI年率.md) | `time/hk/hongguan/ppiyoy` | 每天17:00。 |
 
 ## 美股
 
-> 25个数据集 · 美股列表、实时行情、F10全档案、财务分析、K线
+> 48个数据集 · 美股列表、实时行情、F10全档案、财务分析、K线
 
 | # | 接口名称 | 本地路径 | 更新频率 |
 |---|---------|---------|---------|
 | 1 | [美股列表](us-stock/美股列表.md) | `base/gpus` | 美东时间每天0点。 |
-| 2 | [证券资料](us-stock/证券资料.md) | `time/us/f10/secinfo/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 |
-| 3 | [公司资料](us-stock/公司资料.md) | `time/us/f10/orgprofile/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 |
-| 4 | [主营构成](us-stock/主营构成.md) | `time/us/f10/maincompose/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 |
-| 5 | [高管研究](us-stock/高管研究.md) | `time/us/f10/executive/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 |
-| 6 | [卖空明细](us-stock/卖空明细.md) | `time/us/f10/short/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 |
-| 7 | [机构评级](us-stock/机构评级.md) | `time/us/f10/rating/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 |
-| 8 | [主要指标](us-stock/主要指标.md) | `time/us/f10/finmainindex/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 |
-| 9 | [资产负债表](us-stock/资产负债表.md) | `time/us/f10/balance/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 |
-| 10 | [综合损益表](us-stock/综合损益表.md) | `time/us/f10/income/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 |
-| 11 | [现金流量表](us-stock/现金流量表.md) | `time/us/f10/cashflow/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 |
-| 12 | [股本变动](us-stock/股本变动.md) | `time/us/f10/equitychange/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 |
-| 13 | [拆股并股](us-stock/拆股并股.md) | `time/us/f10/stocksplit/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 |
-| 14 | [董事及股东权益](us-stock/董事及股东权益.md) | `time/us/f10/holder/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 |
-| 15 | [机构持股](us-stock/机构持股.md) | `time/us/f10/orghold/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 |
-| 16 | [基金持股](us-stock/基金持股.md) | `time/us/f10/fundhold/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 |
-| 17 | [高管持股](us-stock/高管持股.md) | `time/us/f10/leaderhold/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 |
-| 18 | [机构明细](us-stock/机构明细.md) | `time/us/f10/orgdetail/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 |
-| 19 | [大事提醒](us-stock/大事提醒.md) | `time/us/f10/gsds/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 |
-| 20 | [分红派息](us-stock/分红派息.md) | `time/us/f10/dividend/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 |
+| 2 | [证券资料](us-stock/证券资料.md) | `time/us/f10/secinfo/{股票代码}` | 每天美东时间18:00。 |
+| 3 | [公司资料](us-stock/公司资料.md) | `time/us/f10/orgprofile/{股票代码}` | 每天美东时间18:00。 |
+| 4 | [主营构成](us-stock/主营构成.md) | `time/us/f10/maincompose/{股票代码}` | 每天美东时间18:00。 |
+| 5 | [高管研究](us-stock/高管研究.md) | `time/us/f10/executive/{股票代码}` | 每天美东时间18:00。 |
+| 6 | [卖空明细](us-stock/卖空明细.md) | `time/us/f10/short/{股票代码}` | 每天美东时间18:00。 |
+| 7 | [机构评级](us-stock/机构评级.md) | `time/us/f10/rating/{股票代码}` | 每天美东时间18:00。 |
+| 8 | [主要指标](us-stock/主要指标.md) | `time/us/f10/finmainindex/{股票代码}` | 每天美东时间18:00。 |
+| 9 | [资产负债表](us-stock/资产负债表.md) | `time/us/f10/balance/{股票代码}` | 每天美东时间18:00。 |
+| 10 | [综合损益表](us-stock/综合损益表.md) | `time/us/f10/income/{股票代码}` | 每天美东时间18:00。 |
+| 11 | [现金流量表](us-stock/现金流量表.md) | `time/us/f10/cashflow/{股票代码}` | 每天美东时间18:00。 |
+| 12 | [股本变动](us-stock/股本变动.md) | `time/us/f10/equitychange/{股票代码}` | 每天美东时间18:00。 |
+| 13 | [拆股并股](us-stock/拆股并股.md) | `time/us/f10/stocksplit/{股票代码}` | 每天美东时间18:00。 |
+| 14 | [董事及股东权益](us-stock/董事及股东权益.md) | `time/us/f10/holder/{股票代码}` | 每天美东时间18:00。 |
+| 15 | [机构持股](us-stock/机构持股.md) | `time/us/f10/orghold/{股票代码}` | 每天美东时间18:00。 |
+| 16 | [基金持股](us-stock/基金持股.md) | `time/us/f10/fundhold/{股票代码}` | 每天美东时间18:00。 |
+| 17 | [高管持股](us-stock/高管持股.md) | `time/us/f10/leaderhold/{股票代码}` | 每天美东时间18:00。 |
+| 18 | [机构明细](us-stock/机构明细.md) | `time/us/f10/orgdetail/{股票代码}` | 每天美东时间18:00。 |
+| 19 | [大事提醒](us-stock/大事提醒.md) | `time/us/f10/gsds/{股票代码}` | 每天美东时间18:00。 |
+| 20 | [分红派息](us-stock/分红派息.md) | `time/us/f10/dividend/{股票代码}` | 每天美东时间18:00。 |
 | 21 | [实时行情数据（3秒落盘）](us-stock/实时行情数据（3秒落盘）.md) | `time/us/real/us_{代码}` | 交易时间段（美东时间）每10秒。 |
 | 22 | [当天分时成交明细](us-stock/当天分时成交明细.md) | `time/us/real/time/trace/onebyone/us_{代码}` | 交易时间段每2分钟。 |
 | 23 | [当天分钟分时成交](us-stock/当天分钟分时成交.md) | `time/us/real/time/trace/timedeal/us_{代码}` | 交易时间段每2分钟。 |
 | 24 | [最新K线](us-stock/最新K线.md) | `time/us/real/time/us_{代码}/{级别}` | 分钟级别盘中（美东时间）每10秒更新，日线及以上级别盘后16:30（美东时间）更新。 |
 | 25 | [历史K线（数据范围：短分时4万根，日线及以上所有）](us-stock/历史K线（数据范围：短分时4万根，日线及以上所有）.md) | `time/us/history/trade/us_{代码}/{级别}` | 分钟级别盘中（美东时间）每10秒更新，日线及以上级别每天16:30（美东时间）更新。 |
+| 26 | [美国ISM制造业指数](us-stock/美国ISM制造业指数.md) | `time/us/hongguan/ism` | 每天美东时间18:00。 |
+| 27 | [美国ISM非制造业指数](us-stock/美国ISM非制造业指数.md) | `time/us/hongguan/ismnm` | 每天美东时间18:00。 |
+| 28 | [美国非农就业人数变化](us-stock/美国非农就业人数变化.md) | `time/us/hongguan/fnl` | 每天美东时间18:00。 |
+| 29 | [美国贸易帐](us-stock/美国贸易帐.md) | `time/us/hongguan/my` | 每天美东时间18:00。 |
+| 30 | [美国失业率](us-stock/美国失业率.md) | `time/us/hongguan/syl` | 每天美东时间18:00。 |
+| 31 | [美国未决房屋销售月率](us-stock/美国未决房屋销售月率.md) | `time/us/hongguan/wyfw` | 每天美东时间18:00。 |
+| 32 | [美国生产者物价指数月率](us-stock/美国生产者物价指数月率.md) | `time/us/hongguan/ppimy` | 每天美东时间18:00。 |
+| 33 | [美国核心生产者物价指数月率](us-stock/美国核心生产者物价指数月率.md) | `time/us/hongguan/hxppimy` | 每天美东时间18:00。 |
+| 34 | [美国核心生产者物价指数年率](us-stock/美国核心生产者物价指数年率.md) | `time/us/hongguan/hxppiny` | 每天美东时间18:00。 |
+| 35 | [美国核心零售销售月率](us-stock/美国核心零售销售月率.md) | `time/us/hongguan/hxlsm` | 每天美东时间18:00。 |
+| 36 | [美国零售销售月率](us-stock/美国零售销售月率.md) | `time/us/hongguan/lsm` | 每天美东时间18:00。 |
+| 37 | [美国消费者物价指数月率](us-stock/美国消费者物价指数月率.md) | `time/us/hongguan/cpimy` | 每天美东时间18:00。 |
+| 38 | [美国消费者物价指数年率](us-stock/美国消费者物价指数年率.md) | `time/us/hongguan/cpiny` | 每天美东时间18:00。 |
+| 39 | [美国核心消费者物价指数月率](us-stock/美国核心消费者物价指数月率.md) | `time/us/hongguan/hxcpimy` | 每天美东时间18:00。 |
+| 40 | [美国核心消费者物价指数年率](us-stock/美国核心消费者物价指数年率.md) | `time/us/hongguan/hxcpiny` | 每天美东时间18:00。 |
+| 41 | [美国新屋开工](us-stock/美国新屋开工.md) | `time/us/hongguan/xwkg` | 每天美东时间18:00。 |
+| 42 | [美国密歇根消费者信心指数初值](us-stock/美国密歇根消费者信心指数初值.md) | `time/us/hongguan/mxg` | 每天美东时间18:00。 |
+| 43 | [美国成屋销售](us-stock/美国成屋销售.md) | `time/us/hongguan/cws` | 每天美东时间18:00。 |
+| 44 | [美国耐用品订单月率](us-stock/美国耐用品订单月率.md) | `time/us/hongguan/nypmy` | 每天美东时间18:00。 |
+| 45 | [美国耐用品订单月率(除运输外)](us-stock/美国耐用品订单月率(除运输外).md) | `time/us/hongguan/hxnypmy` | 每天美东时间18:00。 |
+| 46 | [美国咨商会消费者信心指数](us-stock/美国咨商会消费者信心指数.md) | `time/us/hongguan/zhs` | 每天美东时间18:00。 |
+| 47 | [美国GDP年率初值](us-stock/美国GDP年率初值.md) | `time/us/hongguan/gdpy` | 每天美东时间18:00。 |
+| 48 | [美国央行公布利率决议（上限）](us-stock/美国央行公布利率决议（上限）.md) | `time/us/hongguan/lvjy` | 每天美东时间18:00。 |
 
 
 ---

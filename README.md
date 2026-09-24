@@ -6,10 +6,10 @@
 
 **数据本地落盘，策略再无牵绊**
 
-340个高密度数据集覆盖A股（含基金）、港股、美股 ｜ 实测3秒完成全市场行情更新 ｜ 数据自主可控，策略无需离开本地
+518个高密度数据集覆盖A股（含基金）、港股、美股 ｜ 实测3秒完成全市场行情更新 ｜ 数据自主可控，策略无需离开本地
 
 ![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-blue)
-![Datasets](https://img.shields.io/badge/Datasets-340-green)
+![Datasets](https://img.shields.io/badge/Datasets-518-green)
 ![Update](https://img.shields.io/badge/Realtime-3s%20落盘-orange)
 ![Market](https://img.shields.io/badge/Market-A股%20%7C%20基金%20%7C%20港股%20%7C%20美股-red)
 
@@ -47,12 +47,12 @@
 | 市场 | 数据集 | 覆盖内容 |
 |------|--------|---------|
 | 沪深京A股 | 144 个 | 实时行情(3秒)、L2核心指标、逐笔交易、历史K线、F10全档案 |
-| 沪深数据中心 | 69 个 | 龙虎榜、南北向资金、市场异动、财务五维分析、机构持股 |
+| 沪深数据中心 | 215 个 | 龙虎榜、南北向资金、市场异动、财务五维分析、机构持股 |
 | 基金 | 71 个 | 基金估值净值、业绩分红、基金经理、持仓分析、五大评级体系、基金重仓股 |
-| 港股 | 31 个 | 港股列表、实时行情(2秒)、F10全档案、财务分析、K线24种级别 |
-| 美股 | 25 个 | 美股列表、实时行情、F10全档案、财务分析、K线 |
+| 港股 | 40 个 | 港股列表、实时行情(2秒)、F10全档案、财务分析、K线24种级别 |
+| 美股 | 48 个 | 美股列表、实时行情、F10全档案、财务分析、K线 |
 
-**数据集总数：340 个** ｜ 完整接口文档见 [docs/api/](docs/api/README.md) ｜ [官网接口文档](https://ig50.com/dataset-overview.html)（最新）
+**数据集总数：518 个** ｜ 完整接口文档见 [docs/api/](docs/api/README.md) ｜ [官网接口文档](https://ig50.com/dataset-overview.html)（最新）
 
 ## 与在线API平台有什么不同
 
@@ -137,7 +137,7 @@ print(f"交易时间：{kline.get('d')} 开盘：{kline.get('o')} 收盘：{klin
 
 | 市场 | 数据集 |
 |------|--------|
-| A股（推荐） | 沪深京A股144 + 沪深数据中心69 + 基金71 |
+| A股（推荐） | 沪深京A股144 + 沪深数据中心215 + 基金71 |
 | 港股 | 港股列表（约3200只标的）+ F10全档案 + 财务分析 |
 | 美股 | 美股列表（约1.3w只标的）+ F10全档案 + 财务分析 |
 
@@ -147,7 +147,7 @@ print(f"交易时间：{kline.get('d')} 开盘：{kline.get('o')} 收盘：{klin
 
 - [关于 IG50](docs/about.md) — 产品定位、设计目标、隐私承诺
 - [安装指引](docs/install.md) — 环境要求、脚本安装、参数说明
-- [接口文档](docs/api/README.md) — 340个数据集完整说明
+- [接口文档](docs/api/README.md) — 518个数据集完整说明
 - [示例代码](docs/examples.md) — Python 调用示例
 - [授权说明](docs/pricing.md) — 授权方案与获取方式
 - [免责声明](docs/disclaimer.md) — 使用条款

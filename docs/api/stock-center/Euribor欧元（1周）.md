@@ -1,0 +1,50 @@
+# Euribor欧元（1周）
+
+> 沪深数据中心 / 宏观数据 / 拆借利率 / Euribor欧元（1周）
+
+> 本页为镜像文档，**最新接口、字段、路径以 [官网接口文档](https://ig50.com/dataset-overview.html) 为准**。
+
+## 接口说明
+
+| 项目 | 内容 |
+|------|------|
+| 数据名称 | Euribor欧元（1周） |
+| 所属市场 | 沪深数据中心 |
+| 本地路径 | `数据存放目录/time/hongguan/euribor/1w` |
+
+## 功能描述
+
+获取欧洲银行同业拆借市场-Euribor欧元-1周数据，按日期倒序。
+
+## 更新机制
+
+- **更新频率**：每天21:00。
+- **完成耗时**：约1小时。
+
+## 数据格式
+
+```
+[{},...]
+```
+
+## 字段说明
+
+| 字段 | 类型 | 说明 |
+| --- | --- | --- |
+| tjsj | string | 统计日期（yyyy-MM-dd） |
+| ll | number | 利率（%） |
+| zd | number | 涨跌（BP） |
+
+## 示例
+
+```json
+[{"tjsj":"2026-09-21","ll":2.39,"zd":3.60},{"tjsj":"2026-09-18","ll":2.36,"zd":0.30}]
+```
+
+## 官网文档
+
+完整字段说明与示例数据：[https://ig50.com/sjzx_hongguan-chajie.html?maodian=hongguan-euribor-1w-title](https://ig50.com/sjzx_hongguan-chajie.html?maodian=hongguan-euribor-1w-title)
+
+---
+
+← [返回接口列表](README.md)
