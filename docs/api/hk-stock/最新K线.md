@@ -31,7 +31,7 @@
 
 | 字段 | 类型 | 说明 |
 | --- | --- | --- |
-| d | string | 交易时间（短分时级别格式为yyyy-MM-ddHH:mm，日线及以上级别为yyyy-MM-dd） |
+| d | string | 交易时间（短分时级别格式为yyyy-MM-dd HH:mm，日线及以上级别为yyyy-MM-dd） |
 | o | number | 开盘价（港元） |
 | h | number | 最高价（港元） |
 | l | number | 最低价（港元） |
@@ -42,7 +42,7 @@
 | hs | number | 换手率（%）（仅个股） |
 | zd | number | 涨跌幅（%） |
 | zde | number | 涨跌额（港元） |
-| ud | string | 更新时间（格式为yyyy-MM-ddHH:mm:ss） |
+| ud | string | 更新时间（格式为yyyy-MM-dd HH:mm:ss） |
 
 ## 示例
 

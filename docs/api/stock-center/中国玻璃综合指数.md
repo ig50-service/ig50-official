@@ -31,7 +31,7 @@
 
 | 字段 | 类型 | 说明 |
 | --- | --- | --- |
-| ud | string | 更新时间（yyyy-MM-ddHH:mm:ss） |
+| ud | string | 更新时间（yyyy-MM-dd HH:mm:ss） |
 | gps | string | 相关板块成分股纯股票代码，英文逗号分隔 |
 | zs | array | 历史走势数组（元素字段如下） |
 | tjsj | string | 统计时间（yyyy-MM-dd） |

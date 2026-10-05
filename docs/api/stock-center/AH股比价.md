@@ -40,7 +40,7 @@ AH股比价，按涨跌幅降序。
 | azdf | number | A股涨跌幅（%） |
 | ahbj | number | 比价（A/H） |
 | ahyj | number | 溢价（A/H）% |
-| t | string | 更新时间（yyyy-MM-ddHH:mm:ss） |
+| t | string | 更新时间（yyyy-MM-dd HH:mm:ss） |
 
 ## 示例
 
