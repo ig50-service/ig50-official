@@ -31,7 +31,7 @@
 
 | 字段 | 类型 | 说明 |
 | --- | --- | --- |
-| d | string | 交易时间（美东时间，短分时级别格式为yyyy-MM-ddHH:mm:ss，日线及以上级别为yyyy-MM-dd） |
+| d | string | 交易时间（美东时间，短分时级别格式为yyyy-MM-ddHH:mm，日线及以上级别为yyyy-MM-dd） |
 | o | number | 开盘价（美元） |
 | h | number | 最高价（美元） |
 | l | number | 最低价（美元） |
